@@ -1,0 +1,26 @@
+x = 0
+y = 0
+w = 0
+d = 0
+
+def setup():
+    global x,y,w,d
+    size(800,800)
+    background (203,138,138)
+    stroke ()
+    frameRate(8)
+    fill (0,0,0)
+    
+    
+    
+    
+def draw():
+    global x,y,w,d
+    x = random (400,400)
+    y = random (400,400)
+    w = random (0,200)
+    d = random (0,200)
+    background (203,138,138)
+        
+    ellipse (x,y,w,d)
+
