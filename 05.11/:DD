@@ -1,0 +1,43 @@
+x = 400
+y = 400
+xChange = 10
+yChange = 10
+
+def setup():
+    global x,y,xChange,yChange
+    size(800,800)
+    background(75,173,97)
+    stroke(255)
+    frameRate(15)
+    
+def draw():
+    #background(75,173,97)
+    #w = random (0,100)
+    #d = random (0,100)
+    frameRate(15)
+    global x,y,xChange,yChange
+    ellipse(x,y,100,100)
+    x = x + xChange
+    y = y + yChange
+    
+   
+    global x2,y2,x2Change,y2Change
+    x2 = 400
+    y2 = 400
+    x2Change = 10
+    y2Change = 10
+    ellipse(x2,y2,100,100)
+    x2 = x2 + x2Change
+    y2 = y2 - y2Change
+    
+
+   
+   
+   
+   
+   
+   
+   
+   
+    
+    
