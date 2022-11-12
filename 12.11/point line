@@ -1,0 +1,31 @@
+x = 500
+y = 400
+
+x2Change = 1
+y2Change = 1
+xChange = 1
+yChange = 1
+
+def setup():
+    global x,x2,y,y2,xChange,x2Change,y2Change,yChange
+    size(800,800)
+    background(49,0,0)
+    stroke(255)
+    strokeWeight(16)
+    frameRate(100)
+   
+   
+   
+def draw():
+    global x,y,xChange,yChange
+    point (x,y)
+    x = x + xChange
+    y = y + yChange
+    
+   
+   
+   
+   
+   
+   
+   
