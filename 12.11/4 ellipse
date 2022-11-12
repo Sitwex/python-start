@@ -1,0 +1,65 @@
+x = 400
+y = 400
+x2 = 400
+y2 = 400
+x2Change = 10
+y2Change = 10
+xChange = 10
+yChange = 10
+x3 = 400
+y3 = 400
+x3Change = 10
+y3Change = 10
+x4 = 400
+y4 = 400
+x4Change = 10
+y4Change = 10
+
+
+def setup():
+    global x,x2,y,y2,xChange,x2Change,y2Change,yChange
+    size(800,800)
+    background(250,194,194)
+    stroke(255)
+    frameRate(10)
+    x2 = 400
+    y2 = 400
+    
+
+def draw():
+    background(75,173,97)
+    w = random (0,100)
+    d = random (0,100)
+    frameRate(10)
+    global x,y,xChange,yChange
+    ellipse(x,y,w,d)
+    x = x + xChange
+    y = y + yChange
+    fill(random(0,255),random(0,255),random(0,255))
+    stroke(random(0,255),random(0,255),random(0,255))
+
+
+    global x2,y2,x2Change,y2Change
+    x2Change = 10
+    y2Change = 10
+    ellipse(x2,y2,w,d)
+    x2 = x2 - x2Change
+    y2 = y2 + y2Change
+    
+    global x3,y3,x3Change,y3Change
+    x3Change = 10
+    y3Change = 10
+    ellipse(x3,y3,w,d)
+    x3 = x3 - x3Change
+    y3 = y3 - y3Change
+    
+    
+    global x4,y4,x4Change,y4Change
+    x4Change = 10
+    y4Change = 10
+    ellipse(x4,y4,w,d)
+    x4 = x4 + x4Change
+    y4 = y4 - y4Change
+    #fill(random(0,255),random(0,255),random(0,255))
+    
+    
