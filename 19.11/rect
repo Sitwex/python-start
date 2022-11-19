@@ -1,0 +1,23 @@
+x = 250
+y = 250
+xChange = 1
+yChange = 1
+x2 = 500
+y2 = 500
+x2Change = 0
+y2Change = 0
+
+def setup():
+    global x,y,xChange,yChange,x2,y2,x2Change,y2Change
+    size(500,500)
+    background(136,180,106)
+    
+    
+    
+def draw():
+    global x,y,xChange,yChange,x2,y2,x2Change,y2Change
+    rect(x,y,x2,y2)
+    x = x - xChange
+    y = y + yChange
+    
+    
