@@ -1,0 +1,113 @@
+x = 0
+y = 0
+xChange = 0
+yChange = 150
+x2 = 50
+y2 = 0
+x2Change = 0
+y2Change = 100
+x3 = 100
+y3 = 0
+x3Change = 0
+y3Change = 90
+x4 = 150
+y4 = 0
+x4Change = 0
+y4Change = 130
+x5 = 200
+y5 = 0
+x5Change = 0
+y5Change = 50
+x6 = 300
+y6 = 0
+x6Change = 0
+y6Change = 160
+x7 = 350
+y7 = 0
+x7Change = 0
+y7Change = 60
+x8 = 400
+y8 = 0
+x8Change = 0
+y8Change = 70
+x9 = 0
+y9 = 0
+x9Change = 0
+y9Change = 10
+x10 = 372
+y10 = 0
+x10Change = 0
+y10Change = 100
+x11 = 235
+y11 = 0
+x11Change = 0
+y11Change = 90
+
+
+
+
+
+def setup():
+    global x,y,xChange,yChange,x2,y2,x2Change,y2Change,x10,y10,x10Change,y10Change
+    size(500,500)
+    background(29,53,77)
+    frameRate(9)
+    stroke(255)
+    point(x10,y10)
+    x10 = x10 + x10Change
+    y10 = y10 + y10Change
+
+    
+    
+def draw():
+    global x,y,xChange,yChange,x2,y2,x2Change,y2Change,x3,y3,x3Change,y3Change,x4,y4,x4Change,y4Change,x5,y5,x5Change,y5Change,x6,y6,x6Change,y6Change,x7,y7,x7Change,y7Change,x8,y8,x8Change,y8Change,x9,y9,x9Change,y9Change,x10,y10,x10Change,y10Change,x11,y11,x11Change,y11Change
+   
+    strokeWeight(10)
+    frameRate(1)
+    point(x,y)
+    x = x + xChange
+    y = y + yChange
+        
+    strokeWeight(10)
+    point(x2,y2)
+    x2 = x2 + x2Change
+    y2 = y2 + y2Change
+    
+    strokeWeight(9)
+    point(x3,y3)
+    x3 = x3 + x3Change
+    y3 = y3 + y3Change
+    
+    point(x4,y4)
+    x4 = x4 + x4Change
+    y4 = y4 + y4Change
+    
+    point(x5,y5)
+    x5 = x5 + x5Change
+    y5 = y5 + y5Change
+    
+    point(x6,y6)
+    x6 = x6 + x6Change
+    y6 = y6 + y6Change
+    
+    point(x7,y7)
+    x7 = x7 + x7Change
+    y7 = y7 + y7Change
+    
+    point(x8,y8)
+    x8 = x8 + x8Change
+    y8 = y8 + y8Change
+    
+    point(x9,y9)
+    x9 = x9 + x9Change
+    y9 = y9 + y9Change
+    
+    point(x10,y10)
+    x10 = x10 + x10Change
+    y10 = y10 + y10Change
+    
+    point(x11,y11)
+    x11 = x11 + x11Change
+    y11 = y11 + y11Change
+   
+    
