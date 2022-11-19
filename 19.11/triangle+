@@ -1,0 +1,28 @@
+x = 230
+y = 230
+xChange = 1
+yChange = 1
+x2 = 250
+y2 = 340
+x2Change = 1
+y2Change = 1
+x3 = 270
+y3 = 270
+x3Change = 1
+y3Change = 1
+
+def setup():
+    global x,y,xChange,yChange,x2,y2,x2Change,y2Change
+    size(500,500)
+    background(46,188,134)
+    
+def draw():
+    global x,y,xChange,yChange,x2,y2,x2Change,y2Change,x3,y3,x3Change,y3Change
+    background(46,188,134)
+    triangle(x,y,x2,y2,x3,y3)
+    x = x - xChange
+    y = y - yChange
+    x2 = x2 - x2Change
+    y2 = y2 - y2Change
+    x3 = x3 + x3Change
+    y3 = y3 + y3Change
