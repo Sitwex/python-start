@@ -1,0 +1,22 @@
+x = 0
+y = 0
+xChange = 10
+yChange = 10
+
+
+def setup():
+    global x,y,xChange,yChange,img
+    size(600,600)
+    background(173,169,172)
+    img = loadImage("k.png")
+    frameRate(10)
+    
+    
+def draw():
+    global x,y,xChange,yChange,img
+    background(173,169,172)
+    image(img,x,y)
+    x = x + xChange
+    y = y + yChange
+    
+    
