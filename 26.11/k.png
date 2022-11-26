@@ -1,0 +1,3 @@
+size(800,800)
+img = loadImage("k.png")
+image(img,0,0)
