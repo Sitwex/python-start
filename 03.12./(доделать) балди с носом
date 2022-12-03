@@ -1,0 +1,27 @@
+x = 170
+x2 = 0
+x3 = 200
+y = 130
+y2 = 0
+y3 = 160
+xChange = 1
+yChange = 1
+x2Change = 1
+y2Change = 1
+x3Change = 1
+y3Change = 1
+def setup():
+    global x,y,x2,y2,x3,y3,xChange,yChange,x2Change,y2Change,x3Change,y3Change
+    size(700,700)
+    fill(223,227,34)
+    ellipse(100,120,110,110)
+    fill(37,203,49)
+    rect(50,176,100,200)
+    fill(223,227,34)
+    triangle(x,y,x2,y2,x3,y3)
+    
+    
+    
+    
+def draw():
+     global x,y,x2,y2,x3,y3,xChange,yChange,x2Change,y2Change,x3Change,y3Change
