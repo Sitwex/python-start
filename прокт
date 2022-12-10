@@ -1,0 +1,105 @@
+x = 0
+x2 = 150
+x3 = 200
+x4 = 180
+x5 = 450
+x6 = 500
+x7 = 480
+x8 = 0
+x9 = 690
+x10 = 690
+x11 = 0
+y = 520
+y2 = 80
+y3 = 67
+y4 = 87
+y5 = 92
+y6 = 1
+y7 = 1
+y8 = 0
+xChange = 1
+yChange = 1
+x2Change = 1
+y2Change = 1
+x3Change = 1
+y3Change = 1
+x4Change = 1
+
+def setup():
+    global x,y,x2,y2,x3,y3,xChange,yChange,x2Change,y2Change,x3Change,y3Change
+    size(700,700)
+    background(47,189,203)
+    frameRate(30)
+
+def draw():
+    global x,y,x2,y2,x3,y3,x4,y4,x5,y5,x6,y6,x7,y7,x8,y8,x9,x10,x11,xChange,yChange,x2Change,y2Change,x3Change,y3Change
+    background(47,189,203)
+    #background(36,28,126)
+    stroke(35,216,66)
+    fill(35,216,66)
+    rect(x,y,700,600)
+    push()
+    stroke(255)
+    fill(255)
+    ellipse(x2,y2,100,70)
+    ellipse(x3,y2,100,70)
+    ellipse(x4,y3,100,70)
+
+    ellipse(x5,y4,100,70)
+    ellipse(x6,y4,100,70)
+    ellipse(x7,y5,100,70)
+
+    x2 = x2 - x2Change
+    x3 = x3 - x3Change
+    x4 = x4 - xChange
+
+    x5 = x5 - xChange
+    x6 = x6 - xChange
+    x7 = x7 - xChange
+    pop()
+    
+    fill(234,223,92)
+    stroke(234,223,92)
+    rect(400,400,200,200)
+    
+    fill(250,53,66)
+    stroke(250,53,66)
+    triangle(400,400,510,300,600,400)
+    
+    fill(30,149,211)
+    stroke(10,97,142)
+    rect(430,440,90,110)
+    
+    line(460,440,460,550)
+    
+    fill(106,50,44)
+    rect(530,490,60,111)
+    #fill(196,181,12)
+    #stroke(196,181,12)
+    #rect(390,400,10,200)
+    
+    fill(255,235,3)
+    stroke(255,235,3)
+    ellipse(x9,y6,200,200)#
+    x9 = x9 - xChange
+    fill(152,148,147)
+    stroke(152,148,147)
+    #ellipse(x10,y7,200,200)
+    x10 = x10 - xChange
+    
+    fill(103,47,48)
+    stroke(103,47,48)
+    rect(100,400,60,130)
+    
+    fill(48,155,53)
+    stroke(48,155,53)
+    ellipse(90,390,100,90)
+    fill(25,167,31)
+    ellipse(120,410,100,50)
+    fill(82,170,86)
+    stroke(82,170,86)
+    ellipse(170,430,83,113)
+    fill(6,93,9)
+    stroke(6,93,9)
+
+    
