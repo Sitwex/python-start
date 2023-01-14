@@ -1,0 +1,18 @@
+angle = 0
+    
+def setup():
+    global angle
+    size(700,700)
+    background(0,0,0)
+    frameRate(10)
+    
+def draw():
+    global angle
+    #background(0,0,0)
+    translate(330,330)
+    rotate(radians(angle))
+    angle = angle + 1
+    line(0,0,100,100)
+    stroke(random(255),random(255),random(255))
+    
+    
