@@ -1,0 +1,30 @@
+angle = 0
+angle1 = 0
+x = 0
+y = 0
+angle2 = 0
+
+def setup():
+    global angle,angle1,angle2,x ,y
+    size(800,800)
+    frameRate(50)
+    background(168,216,114)
+
+def draw():
+    global angle,angle1,angle2,x,y
+    push()
+    translate(x,y)
+    rotate(radians(angle))
+    angle = angle + 0.5
+    push()
+    translate(160,160)
+    rotate(radians(angle1))
+    rect(-40,-40,40,40)
+    ange1 = angle1 + 1
+    pop()
+    push()
+    translate(60,60)
+    rotate(radians(angle2))
+    rect()
+              
+    
