@@ -1,0 +1,67 @@
+x = 0
+y = 0
+egg = 0
+cucumber = 0 
+carrot = 0
+Undyne = 0
+def setup():
+    global egg
+    size(600,600)
+    background(29,185,203)
+    frameRate(90)
+    
+def draw():
+    global egg,cucumber,carrot
+    translate(200,200)
+    background(29,185,203)
+    push()
+    fill(35,191,41)
+    stroke(35,191,41)
+    ellipse(100,510,750,750)
+    pop()
+    translate(100,300)
+    rotate(radians(egg))
+    egg = egg - 1
+    fill(227,217,25)
+    stroke(227,217,25)
+    ellipse(360,-50,90,90)
+    pop()
+    push()
+    rotate(radians(carrot))
+    carrot = carrot - 1
+    push()
+    stroke(35,191,41)
+    push()
+    rotate(radians(30))
+    push()
+    #rotate(radians(carrot))
+    fill(21,175,30)
+    stroke(0)
+    rect(290,3,9,29)
+    #line(200,150,207,120)
+    pop()
+    pop()
+    push()
+    fill(227,217,25)
+    ellipse(263,140,25,25)
+    pop()
+    push()
+    rotate(radians(170))
+    push()
+    #rotate(radians(cucumber))
+    #cucumber = cucumber - 1
+    fill(72,9,7)
+    stroke(72,9,7)
+    rect(3,-150,40,80)
+    pop()
+    pop()
+    #stroke(28,211,26)
+    #fill(28,211,26)
+    #ellipse(-10,100,60,50)
+    stroke(24,108,23)
+    fill(24,108,23)
+    ellipse(-10,70,90,100)
+    pop()
+    pop()
+
+    
