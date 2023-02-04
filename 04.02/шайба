@@ -1,0 +1,22 @@
+x = 300
+mode = 0
+
+def setup():
+    size(600,600)
+    background(0)
+    frameRate(100)
+    
+def draw():
+    global x, mode
+    background(0)
+    global x
+    ellipse(x,300,100,100)
+    if mode == 0:
+        x = x + 1
+    if mode == 1:
+        x = x - 1
+    #x = x + 1
+    if x >= 600 - 50:
+        mode = 1
+    if x <= 0 + 50:
+        mode = 0
