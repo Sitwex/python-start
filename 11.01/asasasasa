@@ -1,0 +1,30 @@
+x = 0
+y = 0
+Undyne = 45
+A = 0
+
+def setup():
+    global x,y
+    size(600,600)
+    background(147,132,132)
+    frameRate(100)
+    rectMode(CENTER)
+    
+def draw():
+    global x,y,Undyne,A
+    scale(A)
+    A = A + 1
+    if (A == 5):
+        A = 0
+    background(147,132,132)
+    translate(410,180)
+    rotate(radians(Undyne))
+    push()
+    Undyne = Undyne + 1
+    rect(260,240,100,130)
+    push()
+    translate(-90,180)
+    rotate(12)
+    rect(260,240,100,130)
+    pop()
+    pop()
