@@ -1,0 +1,22 @@
+x = 0
+y = 0
+w = 0
+d = 0
+
+def setup():
+    global x, y
+    size(600,600)
+    background(147,132,132)
+    frameRate(100)
+    
+def draw():
+    global x, y,w,d
+    background(147,132,132)
+    ellipse(300,300,w,d)
+    w = w + 1
+    d = d + 1
+    if (w == 300):
+        w = 0
+    if (d == 300):
+        d = 0
+    
