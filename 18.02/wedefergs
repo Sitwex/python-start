@@ -1,0 +1,51 @@
+x = 0
+y = 0
+undyne = 0
+w = 0
+d = 0
+A = 0
+qq = 0
+
+def setup():
+    global x, y,w,d
+    size(600,600)
+    frameRate(100)
+    background(0)
+    rectMode(CENTER)
+    
+def draw():
+    global x, y,w,d,undyne,A,qq
+    fill(20,255,0)
+    #background(0)
+    push()
+    #if(undyne == 0):
+    translate(300,300)
+    rotate(radians(A))
+  
+
+        
+        
+    rect(x,y,w,d)
+    #w = w + 1
+    #d = d + 1
+    if(w == 400):
+        undyne = 1
+    if(w == 0):
+        undyne = 0
+    if(undyne == 1):
+        w = w - 1
+        A = A - 1
+    if(undyne == 0):
+        w = w + 1
+        A = A + 1
+    if(d == 400):
+        undyne = 1
+    if(d == 0):
+        undyne = 0
+    if(undyne == 1):
+        d = d - 1
+    if(undyne == 0):
+        d = d + 1
+    pop()
+ 
+        
