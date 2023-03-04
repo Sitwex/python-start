@@ -1,0 +1,18 @@
+def setup():
+    global x,y 
+    size(600,600)
+    #frameRate(10)
+    background(34,22,118)
+    stroke(255)
+    strokeWeight(3)
+    
+def draw():
+    global x,y
+    #background(118,106,106)
+    x = random (0,800)
+    y = random (0,800)
+    point(x,y)
+    
+def mouseClicked():
+    if mouseButton == LEFT:
+      background(34,22,118)
