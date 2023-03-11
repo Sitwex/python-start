@@ -1,0 +1,90 @@
+x = 300
+y = 0
+a = 0
+mode = 0
+x2 = 100
+y2 = 0
+undyne = 0
+undyne2 = 0
+x3 = 0
+y3 = 0
+angle = 0
+angle1 = 0
+angle2 = 0
+x4 = 0
+y4 = 0
+
+def setup():
+    global x,y,a,mode,x3,y3,x4,y4,angle,angle1,angle2
+    size(600,600)
+    #background(109,109,118)
+    #frameRate(100)
+    
+def draw():
+    global x,mode,y,a,x2,y2,undyne,undyne2,x3,y3,x4,y4,angle,angle1,angle2
+    #background(0)
+    #background(0)
+    #fill(random(0,255),random(0,255),random(0,255))
+    #ellipse(x,300,100,100)
+    push()
+    frameRate(350)
+    #background(0)
+    if (mousePressed == False):
+        background(0)
+    #if (mousePressed == LEFT):
+    elif mouseButton == LEFT:
+        fill(random(0,255),random(0,255),random(0,255))
+        background(0)
+        ellipse(x,300,100,100)
+        if mode == 0:
+            x = x + 1
+        if mode == 1:
+            x = x - 1
+        if x >= 600 - 50:
+            mode = 1
+        if x <= 0 + 50:
+            mode = 0
+    pop()
+    
+    push()
+    if mouseButton == CENTER:
+        background(0)
+        ellipse(x,y,100,100)
+        if undyne == 0:
+            x = x + 1
+        if x >= 600 - 50:
+            undyne = 1
+        if undyne == 1:
+            x = x - 1
+        if x <= 0 + 50:
+            undyne = 0
+        if undyne2 == 0:
+            y = y + 1
+        if y >= 600 - 50:
+            undyne2 = 1
+        if undyne2 == 1:
+            y = y - 1
+        if y <= 0 + 50:
+            undyne2 = 0
+        
+    pop()
+    push()
+    frameRate(100)
+    if mouseButton == RIGHT:
+        push()
+        translate(290,330)
+        rotate(radians(angle))
+        #background(117,92,173)
+        angle = angle + 1
+        push()
+        translate(x3,y3)
+        rotate(radians(angle1))
+        stroke(255)
+        rect(20,20,20,20)
+        x3 = x3 + 0.1
+        y3 = y3 + 0.2
+        angle1 = angle1 + 15
+        pop()
+        pop()
+    
+    pop()
