@@ -1,0 +1,42 @@
+x = 300
+y = 0
+a = 0
+mode = 0
+x2 = 100
+y2 = 0
+undyne = 0
+undyne2 = 0
+
+def setup():
+    global x,y,a,mode
+    size(600,600)
+    background(109,109,118)
+    #frameRate(100)
+    
+def draw():
+    global x,mode,y,a,x2,y2,undyne,undyne2
+    background(0)
+    global x
+    push()
+    fill(random(0,255),random(0,255),random(0,255))
+    ellipse(x,300,100,100)
+    frameRate(350)
+    #background(0)
+    if (mousePressed == False):
+        background(0)
+    #if (mousePressed == LEFT):
+    if mouseButton == LEFT:
+        if mode == 0:
+            x = x + 1
+        if mode == 1:
+            x = x - 1
+        if x >= 600 - 50:
+            mode = 1
+        if x <= 0 + 50:
+            mode = 0
+    pop()
+    push()
+    rect(0,0,100,100)
+    
+    pop()
+    
