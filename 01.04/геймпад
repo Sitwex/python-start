@@ -1,0 +1,48 @@
+x = 100
+y = 100
+w = 100
+d = 100
+x2 = 200
+y2 = 200
+n = 0
+f = 90
+x3 = 500
+y3 = 470
+x5 = 610
+y5 = 550
+x6 = 400
+y6 = 600
+def setup():
+    size(700,700)
+    background(110)
+    
+def draw():
+    global x,y,w,d,x2,y2,n,f,x3,y3,x5,y5,x6,y6
+    background(110)
+    rect(x,y,w,d)
+    rect(x,y2,w,d)
+    rect(x2,y,w,d)
+    rect(x2,y2,w,d)
+    
+    rect(x3,y3,f,f)
+    rect(x5,y5,f,f)
+    rect(x6,y5,f,f)
+    rect(x3,y6,f,f)
+    
+    if mousePressed == True:
+        if ((mouseX > x3) and (mouseX < (x3 + f)) and (mouseY > y3) and (mouseY < (y3 + f))):
+            y = y - 1
+            y2 = y2 - 1
+            
+        if ((mouseX > x5) and (mouseX < (x5 + f)) and (mouseY > y5) and (mouseY < (y5 + f))):
+            x = x + 1
+            x2 = x2 + 1
+            
+        if ((mouseX > x6) and (mouseX < (x6 + f)) and (mouseY > y5) and (mouseY < (y5 + f))):
+            x = x - 1
+            x2 = x2 - 1
+            
+        if ((mouseX > x3) and (mouseX < (x3 + f)) and (mouseY > y6) and (mouseY < (y6 + f))):
+            y = y + 1
+            y2 = y2 + 1
+            
