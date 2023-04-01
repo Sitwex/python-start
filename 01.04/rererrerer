@@ -1,0 +1,102 @@
+x = 0
+y = 0
+w = 0
+d = 0
+
+n = 0
+
+x2 = 0
+y2 = 0
+w2 = 0
+d2 = 0
+
+x3 = 0
+y3 = 0
+w3 = 0
+d3 = 0
+
+x5 = 0
+y5 = 0
+w5 = 0
+d5 = 0
+
+def setup():
+    global x,y,w,d,n,x2,y2,w2,d2,x3,y3,w3,d3,x5,y5,w5,d5
+    size(800,800)
+    background (100)
+    frameRate(50)
+    x2 = 600
+    y2 = 50
+    w2 = 200
+    d2 = 100
+    
+    x3 = 600
+    y3 = 200
+    w3 = 200
+    d3 = 100
+    
+    x5 = 600
+    y5 = 350
+    w5 = 200
+    d5 = 100
+def draw():
+    global x,y,w,d,n,x2,y2,w2,d2,x3,y3,w3,d3,x5,y5,w5,d5
+    x = random (0,800)
+    y = random (0,800)
+    w = random (400,300)
+    d = random (400,300)
+    stroke(random(0,255),random(0,255),random(0,255))
+    line (x,y,w,d)
+    
+    push()
+    stroke(9)
+    strokeWeight(3)
+    fill(255)
+    rect(x2,y2,w2,d2)
+    textSize (40)
+    fill(0)
+    textAlign(CENTER,CENTER)
+    text("+", 700,100)
+    pop()
+    
+    push()
+    stroke(9)
+    strokeWeight(3)
+    rect(x3,y3,w3,d3)
+    fill(255)
+    #rect(x2,y2,w2,d2)
+    textSize (40)
+    fill(0)
+    textAlign(CENTER,CENTER)
+    text("-", 700,250)
+    pop()
+    
+    push()
+    stroke(9)
+    strokeWeight(3)
+    rect(x5,y5,w5,d5)
+    fill(255)
+    textSize (40)
+    fill(0)
+    textAlign(CENTER,CENTER)
+    text("ochistka", 700,400)
+    pop()
+    
+def mouseClicked():
+    global x,y,w,d,n,x2,y2,w2,d2,x3,y3,w3,d3,x5,y5,w5,d5
+    if ((mouseX > x2) and (mouseX < (x2 + w2)) and (mouseY > y2) and (mouseY < (y2 + d2))):
+        #stroke(26,124,21)
+        stroke(random(100,255),random(100,255),random(100,255))
+        y = random(0,200)
+        x = random(0,200)
+        d = random(0,200)
+        w = random(0,200)
+        strokeWeight(10)
+        
+    if ((mouseX > x3) and (mouseX < (x3 + w3)) and (mouseY > y3) and (mouseY < (y3 + d3))):
+        strokeWeight(3)
+        
+    if ((mouseX > x5) and (mouseX < (x5 + w5)) and (mouseY > y5) and (mouseY < (y5 + d5))):
+        background(100)
+        
+    
