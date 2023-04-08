@@ -1,0 +1,26 @@
+x = 0
+y = 0
+A = u'w'
+def setup():
+    size(700,700)
+    background(100)
+    x = 150
+    y = 400
+    A = u'w'
+    textSize (20)
+    textAlign(CENTER,CENTER)
+    
+def draw():
+    global x,y,A
+    
+
+def keyPressed():
+    global x,y
+    fill(0)
+    text(key, x,y)
+    x = x + 15
+    if key == ENTER:
+        y = y + 40 
+        x = 0
+    if key == TAB:
+        x = x + 30
